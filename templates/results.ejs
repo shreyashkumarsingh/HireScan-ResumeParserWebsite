@@ -59,16 +59,16 @@
 <body>
     <div class="card">
         <div class="alert alert-success text-center" role="alert">
-            ✅ Resume successfully parsed for <strong>{{ parsed["Job Role"] }}</strong>!
+            ✅ Resume successfully parsed for <strong><%= parsed["Job Role"] %></strong>!
         </div>
 
         <h2>Parsed Resume Information</h2>
-        <div class="result-item"><strong>Job Role:</strong> {{ parsed["Job Role"] }}</div>
-        <div class="result-item"><strong>Resume Score:</strong> {{ parsed["Score"] }}</div>
-        <div class="result-item"><strong>Name:</strong> {{ parsed.Name }}</div>
-        <div class="result-item"><strong>Email:</strong> {{ parsed.Email }}</div>
-        <div class="result-item"><strong>Phone:</strong> {{ parsed.Phone }}</div>
-        <div class="result-item"><strong>Skills:</strong> {{ parsed.Skills }}</div>
+        <div class="result-item"><strong>Job Role:</strong> <%= parsed["Job Role"] %></div>
+        <div class="result-item"><strong>Resume Score:</strong> <%= parsed["Score"] %></div>
+        <div class="result-item"><strong>Name:</strong> <%= parsed.Name %></div>
+        <div class="result-item"><strong>Email:</strong> <%= parsed.Email %></div>
+        <div class="result-item"><strong>Phone:</strong> <%= parsed.Phone %></div>
+        <div class="result-item"><strong>Skills:</strong> <%= parsed.Skills %></div>
 
         <a href="/" class="btn btn-primary btn-home">⬅ Back to Upload</a>
     </div>
